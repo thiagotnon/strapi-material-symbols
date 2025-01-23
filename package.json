@@ -1,0 +1,98 @@
+{
+  "version": "0.0.1",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "custom-fields",
+    "material",
+    "symbols",
+    "google",
+    "icon",
+    "svg"
+  ],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.14",
+    "@strapi/icons": "^2.0.0-rc.14",
+    "material-symbols": "^0.27.2",
+    "react-intl": "^7.1.4"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.3.0",
+    "@strapi/strapi": "^5.8.0",
+    "@strapi/typescript-utils": "^5.8.0",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "prettier": "^3.4.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.2",
+    "styled-components": "^6.1.14",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.3.0",
+    "@strapi/strapi": "^5.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.2",
+    "styled-components": "^6.1.14"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "material-symbols",
+    "displayName": "Material Symbols and Icons",
+    "description": "A plugin for strapi to select Material Symbols and Icons."
+  },
+  "name": "strapi-plugin-material-symbols",
+  "description": "A plugin for strapi to select Material Symbols and Icons.",
+  "license": "MIT",
+  "author": {
+    "name": "Thiago N.",
+    "email": "thiagotnon@gmail.com",
+    "url": "https://github.com/thiagotnon"
+  },
+  "repository": {
+    "url": "https://github.com/thiagotnon/strapi-material-symbols",
+    "type": "git",
+    "directory": "."
+  },
+  "bugs": {
+    "url": "https://github.com/thiagotnon/strapi-material-symbols",
+    "email": "dulajdeshans@gmail.com"
+  },
+  "homepage": "https://github.com/thiagotnon/strapi-material-symbols",
+  "readme": "https://github.com/thiagotnon/strapi-material-symbols#readme",
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  }
+}

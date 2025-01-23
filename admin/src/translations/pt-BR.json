@@ -1,0 +1,12 @@
+{
+  "material-symbols.plugin.name": "Strapi Material Symbols and Icons",
+  "material-symbols.component.label": "Material Symbols and Icons",
+  "material-symbols.component.modal.open.label": "Selecione um simbolo ou ícone",
+  "material-symbols.component.remove.label": "Remover",
+  "material-symbols.component.modal.title": "Selecione um simbolo ou ícone",
+  "material-symbols.component.search.placeholder": "Procure por um simbolo ou ícone...",
+  "material-symbols.component.search.button.label": "Procurar",
+  "material-symbols.plugin.description": "Plugin para o strapi para selecionar simbolos ou ícones da biblioteca Marterial Symbols and Icons.",
+  "material-symbols.options.advanced.requiredField": "Campo obrigatório",
+  "material-symbols.options.advanced.requiredField.description": "Você não poderá criar uma entrada se este campo estiver vazio"
+}

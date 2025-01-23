@@ -1,0 +1,10 @@
+{
+  "material-symbols.plugin.name": "Strapi Material Symbols and Icons",
+  "material-symbols.component.label": "Material Symbols and Icons",
+  "material-symbols.component.modal.open.label": "Select a material symbol or icon",
+  "material-symbols.component.remove.label": "Remove",
+  "material-symbols.component.modal.title": "Select a symbol or icon",
+  "material-symbols.component.search.placeholder": "Search for a symbol or icon...",
+  "material-symbols.component.search.button.label": "Search",
+  "material-symbols.plugin.description": "A plugin for strapi to select material symbols and icons."
+}
