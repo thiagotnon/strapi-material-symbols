@@ -89,6 +89,13 @@
     "url": "https://github.com/thiagotnon/strapi-material-symbols",
     "email": "dulajdeshans@gmail.com"
   },
+  "maintainers": [
+    {
+      "name": "Thiago N.",
+      "email": "thiagotnon@gmail.com",
+      "url": "https://github.com/thiagotnon"
+    }
+  ],
   "homepage": "https://github.com/thiagotnon/strapi-material-symbols",
   "readme": "https://github.com/thiagotnon/strapi-material-symbols#readme",
   "engines": {

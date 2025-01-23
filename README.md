@@ -1,6 +1,10 @@
 # Strapi Plugin Material Symbols and Icons
 
+![cover!](/.github/cover.png)
+
 Strapi Plugin Material Symbols and Icons allows you to add a custom field to Strapi for selecting icons from Google's Material Symbols typography.
+
+![input!](/.github/input.png)
 
 ## Installation
 
