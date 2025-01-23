@@ -26,6 +26,8 @@ module.exports = {
 
 Once the plugin is installed and configured, a new menu will appear in the Strapi admin panel listing all available icons.
 
+![demo!](/.github/screen-capture.gif)
+
 ## Adding a custom field
 
 - In the Strapi admin panel, go to content configuration.
