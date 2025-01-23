@@ -69,7 +69,7 @@
   "strapi": {
     "kind": "plugin",
     "name": "material-symbols",
-    "displayName": "Material Symbols and Icons",
+    "displayName": "Strapi plugin Material Symbols and Icons",
     "description": "A plugin for strapi to select Material Symbols and Icons."
   },
   "name": "strapi-plugin-material-symbols",
