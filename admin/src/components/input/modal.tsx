@@ -27,8 +27,18 @@ export const Modal: React.FC<{
     onClearSearch();
   };
 
+  const onToggle = () => {
+    onToggleModal();
+    onClear();
+  };
+
+  const onSelect = (icon: string) => {
+    onSelectIcon(icon);
+    onClear();
+  };
+
   return (
-    <ModalComponent.Root open={isModalOpen} onOpenChange={onToggleModal}>
+    <ModalComponent.Root open={isModalOpen} onOpenChange={onToggle}>
       <ModalComponent.Content>
         <ModalComponent.Header>
           <ModalComponent.Title>
@@ -45,7 +55,7 @@ export const Modal: React.FC<{
             value={searchQuery}
             onSearch={onSearch}
           />
-          <List onSelectIcon={onSelectIcon} searchQuery={searchParam} />
+          <List onSelectIcon={onSelect} searchQuery={searchParam} />
         </ModalComponent.Body>
       </ModalComponent.Content>
     </ModalComponent.Root>
