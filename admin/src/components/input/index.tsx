@@ -1,9 +1,9 @@
 import { DesignSystemProvider, darkTheme, lightTheme } from '@strapi/design-system';
-import 'material-symbols/outlined.css';
 import React from 'react';
 import { MessageDescriptor } from 'react-intl';
 import { Modal } from './modal';
 import TextField from './text-field';
+import('material-symbols/outlined.css');
 
 type TInputProps = {
   attribute?: any;

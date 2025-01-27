@@ -2,6 +2,7 @@ import { Modal as ModalComponent } from '@strapi/design-system';
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { getTranslation } from '../../utils/getTranslation';
+import('material-symbols/outlined.css');
 
 import Search from './search';
 

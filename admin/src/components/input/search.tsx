@@ -1,6 +1,7 @@
 import { Flex, IconButton, SearchForm, Searchbar } from '@strapi/design-system';
 import { useIntl } from 'react-intl';
 import { getTranslation } from '../../utils/getTranslation';
+import('material-symbols/outlined.css');
 
 type TSearchProps = {
   value: string;

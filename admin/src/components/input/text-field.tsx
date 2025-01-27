@@ -2,6 +2,7 @@ import { Box, Field, IconButton, TextInput } from '@strapi/design-system';
 import { MessageDescriptor, useIntl } from 'react-intl';
 import styled from 'styled-components';
 import { getTranslation } from '../../utils/getTranslation';
+import('material-symbols/outlined.css');
 
 type TInputProps = {
   disabled?: string;

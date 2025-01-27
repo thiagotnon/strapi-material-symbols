@@ -2,6 +2,7 @@ import { Flex, Loader } from '@strapi/design-system';
 import React from 'react';
 import ICONS_JSON from '../../utils/icons.json';
 import { IconBox } from './icon-box';
+import('material-symbols/outlined.css');
 
 type TListProps = {
   searchQuery: string;
