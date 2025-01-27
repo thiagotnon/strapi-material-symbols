@@ -1,5 +1,4 @@
 import { Box, Flex, Loader, Main, Typography } from '@strapi/design-system';
-import 'material-symbols/outlined.css';
 import React, { Suspense } from 'react';
 import { useIntl } from 'react-intl';
 import { IconBox } from '../components/input/icon-box';
