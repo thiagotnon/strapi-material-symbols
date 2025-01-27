@@ -1,3 +1,4 @@
+import 'material-symbols/outlined.css';
 import { useEffect, useRef } from 'react';
 
 import { PLUGIN_ID } from '../pluginId';
