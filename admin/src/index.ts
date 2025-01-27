@@ -1,3 +1,4 @@
+import 'material-symbols/outlined.css';
 import { Initializer } from './components/Initializer';
 import { PluginIcon } from './components/PluginIcon';
 import { PLUGIN_ID } from './pluginId';
