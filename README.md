@@ -36,9 +36,11 @@ This plugin now uses Changesets for automatic versioning and npm releases.
 npm run changeset
 ```
 
-- Merge changes into `main`.
+- Open a pull request and merge changes into `main`.
 - GitHub Actions will open or update a release PR with version and changelog updates.
 - When the release PR is merged, the package is automatically published to npm.
+
+Releases are generated only from the `main` branch workflow. Use feature branches for all changes and merge through pull requests.
 
 ## Adding a custom field
 
