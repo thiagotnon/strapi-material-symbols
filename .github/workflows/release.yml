@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: release-main
@@ -23,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -34,13 +35,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Create release PR or publish
-        uses: changesets/action@v1
-        with:
-          version: npm run version-packages
-          publish: npm run release
-          commit: "chore(release): version packages"
-          title: "chore(release): version packages"
+      - name: Detect pending changesets
+        id: pending
+        run: |
+          COUNT=$(find .changeset -maxdepth 1 -name "*.md" ! -name "README.md" | wc -l | tr -d ' ')
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Stop when there are no pending changesets
+        if: steps.pending.outputs.count == '0'
+        run: echo "No pending changesets. Nothing to release."
+
+      - name: Version packages
+        if: steps.pending.outputs.count != '0'
+        run: npm run version-packages
+
+      - name: Commit version updates
+        if: steps.pending.outputs.count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(release): version packages" || echo "No changes to commit"
+
+      - name: Push version commit
+        if: steps.pending.outputs.count != '0'
+        run: git push
+
+      - name: Publish to npm
+        if: steps.pending.outputs.count != '0'
+        run: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -37,8 +37,7 @@ npm run changeset
 ```
 
 - Open a pull request and merge changes into `main`.
-- GitHub Actions will open or update a release PR with version and changelog updates.
-- When the release PR is merged, the package is automatically published to npm.
+- After merge to `main`, GitHub Actions automatically bumps package versions and publishes to npm.
 
 Releases are generated only from the `main` branch workflow. Use feature branches for all changes and merge through pull requests.
 
