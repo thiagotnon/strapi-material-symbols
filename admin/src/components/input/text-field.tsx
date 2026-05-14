@@ -46,7 +46,7 @@ const TextField: React.FC<TInputProps> = ({
 
   return (
     <Box>
-      <Field.Root id={name} hint={description && formatMessage(description)} error={error}>
+      <Field.Root id={name} hint={description && formatMessage({ id: description.id || 'material-symbols.component.description', defaultMessage: description.defaultMessage })} error={error}>
         <Field.Label>
           {formatMessage({
             id: getTranslation(`component.label`),
@@ -60,7 +60,7 @@ const TextField: React.FC<TInputProps> = ({
           onChange={onChange}
           onClick={onToggleModal}
           disabled={disabled}
-          placeholder={placeholder && formatMessage(placeholder)}
+          placeholder={placeholder && formatMessage({ id: placeholder.id || 'material-symbols.component.placeholder', defaultMessage: placeholder.defaultMessage })}
           value={value || ''}
           startAction={
             <IconButton
