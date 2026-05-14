@@ -40,8 +40,11 @@
     "watch": "strapi-plugin watch",
     "watch:link": "strapi-plugin watch:link",
     "verify": "strapi-plugin verify",
-    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
-    "test:ts:back": "run -T tsc -p server/tsconfig.json",
+    "test:ts:front": "tsc -p admin/tsconfig.json --noEmit",
+    "test:ts:back": "tsc -p server/tsconfig.json --noEmit",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
     "publish:patch": "npm run build && npm version patch && npm publish",
     "publish:minor": "npm run build && npm version minor && npm publish",
     "publish:major": "npm run build && npm version major && npm publish",
@@ -54,6 +57,7 @@
     "react-intl": "^7.1.4"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.6",
     "@strapi/sdk-plugin": "^5.3.0",
     "@strapi/strapi": "^5.8.0",
     "@strapi/typescript-utils": "^5.8.0",

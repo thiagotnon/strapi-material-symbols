@@ -26,6 +26,20 @@ module.exports = {
 
 Once the plugin is installed and configured, a new menu will appear in the Strapi admin panel listing all available icons.
 
+## Automated versioning and releases
+
+This plugin now uses Changesets for automatic versioning and npm releases.
+
+- Add a changeset for user-facing changes:
+
+```bash
+npm run changeset
+```
+
+- Merge changes into `main`.
+- GitHub Actions will open or update a release PR with version and changelog updates.
+- When the release PR is merged, the package is automatically published to npm.
+
 ## Adding a custom field
 
 - In the Strapi admin panel, go to content configuration.
@@ -35,7 +49,7 @@ Once the plugin is installed and configured, a new menu will appear in the Strap
 - In the `Advanced Settings` tab, set the field as required or not.
 - Save the changes.
 
-#### 🖖👽 Support
+### 🖖👽 Support
 
 If you want to say **Thank You** and/or support the active development of `Strapi Material Symbols and Icons`:
 
