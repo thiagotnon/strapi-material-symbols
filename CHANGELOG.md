@@ -1,5 +1,11 @@
 # strapi-plugin-material-symbols
 
+## 0.0.3
+
+### Patch Changes
+
+- e11db35: generate a new version
+
 ## 0.0.2
 
 ### Patch Changes
