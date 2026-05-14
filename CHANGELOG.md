@@ -1,5 +1,11 @@
 # strapi-plugin-material-symbols
 
+## 0.1.0
+
+### Minor Changes
+
+- 7c0a1eb: generate new release
+
 ## 0.0.3
 
 ### Patch Changes
