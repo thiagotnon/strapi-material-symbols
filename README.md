@@ -26,20 +26,11 @@ module.exports = {
 
 Once the plugin is installed and configured, a new menu will appear in the Strapi admin panel listing all available icons.
 
-## Automated versioning and releases
+## Releases
 
-This plugin now uses Changesets for automatic versioning and npm releases.
+Versioning and publishing are handled automatically by repository CI when changes are merged into `main`.
 
-- Add a changeset for user-facing changes:
-
-```bash
-npm run changeset
-```
-
-- Open a pull request and merge changes into `main`.
-- After merge to `main`, GitHub Actions automatically bumps package versions and publishes to npm.
-
-Releases are generated only from the `main` branch workflow. Use feature branches for all changes and merge through pull requests.
+Contributors should use feature branches and open pull requests; releases are generated from the protected `main` branch workflow.
 
 ## Adding a custom field
 
