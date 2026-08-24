@@ -41,7 +41,7 @@ export default {
                 type: 'checkbox',
                 intlLabel: {
                   id: `${PLUGIN_ID}.options.advanced.requiredField`,
-                  defaultMessage: 'Required field',
+                  defaultMessage: 'This is a required field',
                 },
                 description: {
                   id: `${PLUGIN_ID}.options.advanced.requiredField.description`,
