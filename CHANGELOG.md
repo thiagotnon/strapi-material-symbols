@@ -1,5 +1,11 @@
 # strapi-plugin-material-symbols
 
+## 0.1.1
+
+### Patch Changes
+
+- 9ff123d: Declare official compatibility with Node.js 22 by updating the package engines range and documentation.
+
 ## 0.1.0
 
 ### Minor Changes
