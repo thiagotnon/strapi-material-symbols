@@ -36,6 +36,8 @@ Versioning and publishing are handled automatically by repository CI when change
 
 Contributors should use feature branches and open pull requests; releases are generated from the protected `main` branch workflow.
 
+The CI publish step requires a granular npm access token with bypass 2FA enabled, or you can switch the workflow to trusted publishing. Regular user tokens may trigger an OTP prompt and fail the release job.
+
 ## Adding a custom field
 
 - In the Strapi admin panel, go to content configuration.

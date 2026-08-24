@@ -64,7 +64,11 @@ jobs:
 
       - name: Verify npm authentication
         if: steps.pending.outputs.count != '0'
-        run: npm whoami
+        run: |
+          if ! npm whoami; then
+            echo "NPM_TOKEN must be a granular npm access token with bypass 2FA enabled, or use trusted publishing instead."
+            exit 1
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
