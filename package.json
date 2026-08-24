@@ -111,7 +111,7 @@
   "homepage": "https://github.com/thiagotnon/strapi-material-symbols",
   "readme": "https://github.com/thiagotnon/strapi-material-symbols#readme",
   "engines": {
-    "node": ">=16.0.0 <=20.x.x",
+    "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   }
 }

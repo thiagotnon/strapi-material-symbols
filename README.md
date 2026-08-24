@@ -8,6 +8,10 @@ Strapi Plugin Material Symbols and Icons allows you to add a custom field to Str
 
 ## Installation
 
+### Requirements
+
+- Node.js 18 to 22
+
 To install the plugin, run the following command in your Strapi project directory:
 
 ```bash
