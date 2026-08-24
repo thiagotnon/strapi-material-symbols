@@ -1,5 +1,11 @@
 # strapi-plugin-material-symbols
 
+## 0.1.2
+
+### Patch Changes
+
+- df97134: Update the empty-field alert message in the admin interface.
+
 ## 0.1.1
 
 ### Patch Changes
